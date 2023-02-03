@@ -1,0 +1,69 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(27,27,27);
+}
+/*To put the cards inside the flex container so that they are placed side by side*/
+.container{
+    display: flex;
+    /*to center the cards in the middle of the layout*/
+    justify-content: center;
+    /*for the layout to fit in smaller devices*/
+    flex-wrap: wrap;
+}
+/*create cards*/
+.card{
+    background-color: white;
+    width: 270px;
+    /*space btwn cards*/
+    margin: 10px;
+    border-radius: 15px;
+}
+.card-image{
+    /*placeholder for the image,will be removed after image is added*/
+    /*background-color: powderblue;*/
+
+    height: 170px;
+    margin-bottom: 15px;
+    /*positions image the right way*/
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+    
+}
+.car1{
+    background-image: url(images/bugatti.jpg);
+}
+.car2{
+    background-image: url(images/ferrari\ suv.jpg);
+}
+.car3{
+    background-image: url(images/Aston\ martin.jpg);
+}
+.card p{
+    padding: 10px;
+}
+.card h2{
+    padding: 10px;
+}
+.card a{
+    background-color: black;
+    color: white;
+    padding: 15px 20px;
+    /* anchor tags are inline elements so make it block to allow centering them*/
+    display: block;
+    text-align: center;
+    margin: 20px 50px;
+    /*to clear line in read more link*/
+    text-decoration: none;
+}
+.card:hover{
+    background-color:dimgray;
+    color: white;
+    cursor: pointer;
+    /*makes the card bigger when hovered over*/
+    transform: scale(1.03);
+    transition: all 0.8s ease;
+}
